@@ -25,7 +25,7 @@ public class EmployeeTest {
 }
 
 class Employee {
-    private String name;
+    private final String name;
     private double salary;
     private Date hireDay;
 
@@ -45,11 +45,11 @@ class Employee {
     }
 
     public Date getHireDay() {
-        return hireDay;
+        return hireDay.clone();
     }
 
     public void raiseSalary(double byPercent) {
-        double raise = salary * byPercent / 100;
-        salary += raise;
+        double raise = this.salary * byPercent / 100;
+        this.salary += raise;
     }
 }
