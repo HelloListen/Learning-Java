@@ -1,4 +1,4 @@
-package stackTrace;
+package Exception.stackTrace;
 
 import java.util.*;
 
