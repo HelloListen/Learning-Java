@@ -1,5 +1,6 @@
 package thinkinjava;
 
+
 /**
  * Created by zhangbin on 16/5/19.
  */
